@@ -3,9 +3,9 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
+    margin: 10%;
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: rgb(0, 128, 0);
     color: #333;
 }
 
