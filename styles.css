@@ -1,22 +1,49 @@
+/* styles.css */
+
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     margin: 0;
     padding: 20px;
-}
-
-h1, h2 {
+    background-color: #f4f4f4;
     color: #333;
 }
 
-p {
-    line-height: 1.6;
+header {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: #2c3e50;
+}
+
+/* Section Styles */
+.section {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+/* List Styles */
 ul {
-    list-style-type: square;
+    list-style-type: none; /* Remove default bullet points */
+    padding-left: 0; /* Remove left padding */
 }
 
 li {
-    margin-bottom: 5px;
+    margin-bottom: 10px; /* Space between list items */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: 20px;
 }
