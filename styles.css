@@ -1,77 +1,22 @@
-/* Reset CSS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Styling the body */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2 {
     color: #333;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-/* Header styling */
-.header {
-    text-align: center;
-    margin-bottom: 30px;
+p {
+    line-height: 1.6;
 }
 
-.header h1 {
-    font-size: 2.5rem;
-    color: #005f73;
-    transition: color 0.3s;
+ul {
+    list-style-type: square;
 }
 
-.header h1:hover {
-    color: #94d2bd;
-}
-
-.header p {
-    font-size: 1.2rem;
-    margin-top: 10px;
-}
-
-/* Content Section */
-.content {
-    width: 60%;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-}
-
-.content:hover {
-    transform: scale(1.02);
-}
-
-/* Hover Effect for Lists */
-.hover-list li {
-    margin-bottom: 10px;
-    transition: color 0.3s;
-}
-
-.hover-list li:hover {
-    color: #ee9b00;
-}
-
-/* Footer styling */
-.footer {
-    margin-top: 20px;
-}
-
-.footer a {
-    color: #005f73;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.footer a:hover {
-    color: #94d2bd;
+li {
+    margin-bottom: 5px;
 }
