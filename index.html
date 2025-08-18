@@ -1,116 +1,184 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alfredo Garcia</title>
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="A brief overview of Your Name's professional experience, skills, and education.">
-    <meta name="keywords" content="Your Name, CV, resume, skills, education, career history">
+    <title>Alfredo Garcia | Industrial Chemical Engineering</title>
+    <meta name="description" content="Portafolio profesional de Alfredo Garcia, Ingeniero Químico con experiencia en optimización de procesos industriales.">
+
+    <meta property="og:title" content="CV de Alfredo Garcia">
+    <meta property="og:description" content="Explora mi trayectoria profesional">
+    <meta property="og:image" content="images/Fred.png">
+    <meta property="og:url" content="https://mandrakekfire.github.io/MndrFrdRSMTst1/">
     <meta name="robots" content="index, follow">
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="Resume, Alfredo Garcia">
-    <meta property="og:description" content="Explore the professional journey of Alfredo Garcia">
-    <meta property="og:image" content="/favicon-32x32.png"> <!-- Replace with an actual image URL -->
-    <meta property="og:url" content="https://mandrakekfire.github.io/My_Resume/"> <!-- Replace with the actual URL -->
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type="/favicon.ico"> <!-- Replace with your favicon file -->
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="styles.css">
+
+    <link rel="icon" href="images/icons/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <h1>Alfredo Garcia</h1>
-    <h2>Professional Summary</h2>
-    <p>Detail-oriented and highly organized Data Entry Analyst with over 8 years of experience in data management and analysis. Proficient in inputting,
-      updating, and maintaining data in databases and spreadsheets, ensuring accuracy and consistency across all records. Skilled in verifying and correcting data discrepancies, assisting in data retrieval,
-      and generating comprehensive reports to support business operation.</p>
+
+    <header class="main-header">
+        <nav class="container">
+            <a href="#" class="logo">AG</a>
+            <ul class="nav-menu">
+                <li><a href="#experience">Experiencia</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#education">Educación</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            <button class="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+
+        <section class="hero container">
+            <div class="hero-text">
+                <h1>Alfredo Garcia</h1>
+                <p class="subtitle">Industrial Chemical Engineer</p>
+                <p class="description">Analista de datos con más de 8 años de experiencia transformando datos complejos en decisiones estratégicas para optimizar procesos industriales.</p>
+                <div class="hero-buttons">
+                    <a href="CV.pdf" class="btn btn-primary" download>Descargar CV</a>
+                    <a href="#contact" class="btn btn-secondary">Contacto</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/Fred.png" alt="Fotografía de Alfredo Garcia">
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section id="experience" class="section container">
+            <h2>Experiencia Profesional</h2>
+            <div class="experience-grid">
+                <div class="card animate-on-scroll">
+                    <div class="card-header">
+                        <h3>Project Manager & Data Analyst</h3>
+                        <p>Truper | mar. 2022 – Actualmente</p>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Supervisión de proyectos de mantenimiento de agua, logrando mejoras en la eficiencia y organización de datos.</li>
+                            <li>Verificación rigurosa de datos en operaciones de almacén para reducir discrepancias y optimizar la asignación de recursos.</li>
+                            <li>Uso de herramientas de software para rastrear, analizar y reportar el progreso de proyectos y uso de recursos.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card animate-on-scroll">
+                    <div class="card-header">
+                        <h3>Data Entry Analyst & WWTP Supervisor</h3>
+                        <p>Modastage | mar. 2019 – mar. 2022</p>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Gestión de grandes volúmenes de datos operativos de sistemas de tratamiento de aguas residuales.</li>
+                            <li>Generación de informes de rendimiento detallados para la toma de decisiones.</li>
+                            <li>Optimización de procesos de entrada de datos, reduciendo errores y tiempos de procesamiento.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card animate-on-scroll">
+                    <div class="card-header">
+                        <h3>Entry Level Data Entry (Internship)</h3>
+                        <p>ALRETECH | oct. 2018 – ene. 2019</p>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Lideré un proyecto de mejora para reducir contaminantes, aplicando análisis de datos para optimizar flujos de trabajo.</li>
+                            <li>Implementé un sistema de seguimiento de datos para subproductos, mejorando el control de calidad.</li>
+                            <li>Desarrollé protocolos de validación de datos que redujeron las discrepancias en los registros de producción en un 35%.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section container">
+            <h2>Habilidades</h2>
+            <div class="skills-grid">
+                <div class="skill-category animate-on-scroll">
+                    <i class="fas fa-code"></i>
+                    <h3>Técnicas</h3>
+                    <ul>
+                        <li>Python & R</li>
+                        <li>SQL & Gestión de BBDD</li>
+                        <li>Análisis Estadístico</li>
+                        <li>Machine Learning</li>
+                        <li>Visualización (Tableau, Matplotlib)</li>
+                        <li>Big Data (Hadoop, Spark)</li>
+                        <li>Cloud (AWS, Azure)</li>
+                    </ul>
+                </div>
+                <div class="skill-category animate-on-scroll">
+                    <i class="fas fa-comments"></i>
+                    <h3>Interpersonales</h3>
+                    <ul>
+                        <li>Comunicación Efectiva</li>
+                        <li>Resolución de Problemas</li>
+                        <li>Pensamiento Crítico y Analítico</li>
+                        <li>Trabajo en Equipo</li>
+                        <li>Atención al Detalle</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section container">
+            <h2>Educación y Certificaciones</h2>
+            <div class="education-grid">
+                <div class="card animate-on-scroll">
+                    <p><strong>Certificado de Carrera en Ciberseguridad</strong> - Google (2024)</p>
+                </div>
+                <div class="card animate-on-scroll">
+                    <p><strong>Certificación TKT (Módulos 1, 2, 3)</strong> - Harmon Hall (2021)</p>
+                </div>
+                <div class="card animate-on-scroll">
+                    <p><strong>Ingeniería Química Industrial</strong> - TecNM (2018)</p>
+                </div>
+                 <div class="card animate-on-scroll">
+                    <p><strong>Especialización en Procesos Químicos Sustentables</strong> - TecNM (2018)</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <h2>Contacto</h2>
+                <p>¡Conectemos! Estoy disponible para nuevas oportunidades y colaboraciones.</p>
+                <div class="contact-links">
+                    <a href="mailto:alfredogarciaingquim@protonmail.com" class="contact-item animate-on-scroll">
+                        <i class="fas fa-envelope"></i>
+                        <span>alfredogarciaingquim@protonmail.com</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/alfredo-garcia-267a19308/" target="_blank" class="contact-item animate-on-scroll">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://www.credly.com/users/fredgarciakr" target="_blank" class="contact-item animate-on-scroll">
+                        <i class="fas fa-award"></i>
+                        <span>Credly</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
     
-    <h2>Work Experience</h2>
-    <ul>
-        <li><strong>Project Manager | Commercial Supervisor | S&H Supervisor | Analyst Chemist | Service Technician</strong> at Truper (March 2022 – Currently)</li>
-        <p>Within the tasks I performed in the execution of my duties, I successfully oversaw critical water maintenance projects for boilers, chillers, induction furnaces,
-         and cooling towers. Through these experiences, I developed a strong foundation in data organization, accuracy, and attention to detail, all of which are critical
-         for the Data Entry Analyst role.
-          Key Skills and Accomplishments:
-            - Typing Speed and Accuracy: Ensured meticulous data entry for project oversight and chemical management, maintaining consistent accuracy in tracking resources, scheduling,
-         and supply management.
-          - Data Organization & File Management: Managed extensive data on chemical procurement, resource deployment, and project logistics, maintaining well-organized databases and
-         ensuring accurate data storage and retrieval for continuous project evaluation.
-          - Data Verification & Validation: Implemented rigorous data verification methods in warehouse operations  and  material  inventory  management  to  ensure  precise  stock 
-         levels,  reducing discrepancies and optimizing resource allocation.
-          - Attention to Detail: Led projects that required high levels of precision, such as maintaining water quality standards and compliance with environmental regulations. Identified and corrected
-         discrepancies in records and materials to ensure accurate reporting and regulatory compliance. - Advanced Computer Skills: Leveraged advanced software tools to track, analyze, and
-         report on project progress, resource usage, and chemical levels. Proficient in Microsoft Office Suite (Excel, Word) and data entry software, ensuring efficient processing of large datasets.
-          - Time Management & Multitasking: Skillfully managed multiple tasks simultaneously, including project  supervision,  resource  optimization,  and  customer  engagement,  ensuring  timely
-         completion of data entry and reporting tasks while adhering to deadlines.
-          - Confidentiality & Data Security: Managed sensitive data, including client information and chemical compositions, while adhering to strict confidentiality standards and implementing data
-         protection measures.- Problem-Solving & Analytical Skills: Identified inefficiencies in warehouse management and chemical usage, implemented improvement projects that reduced contaminants
-         and optimized resource utilization, demonstrating basic analytical skills to solve operational challenges.
-          - Team Collaboration & Communication: Worked closely with cross-functional teams, including engineers, technicians, and clients, to ensure seamless communication and alignment on project
-         objectives, data handling, and reporting. Fostered a collaborative work environment through proactive communication and clear reporting of data and progress</p>
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> Alfredo Garcia. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 
-        <li><strong>Data Entry Analyst | WWTP Maintenance supervisor | WWTP Maintenance technician</strong> at Modastage (March 2019 – march 2022)</li>
-        <p>During my time as a Wastewater Treatment Plant Maintenance professional, I developed and refined key skills in data management, attention to detail, and process optimization. My role involved overseeing the supervision and operation of wastewater treatment systems, ensuring compliance with key standards such as NOM-001 and 002 of SEMARNAT, while also applying advanced technical skills in electromechanics and process optimization
-          Key Skills and Accomplishments:
-          - Data Input & Maintenance: Entered, updated, and maintained large datasets related to the operation of wastewater treatment systems, including chemical usage, maintenance logs, and
-          compliance reports through which I improved my ability to manage large volumes of data efficiently.
-          - Data Verification & Discrepancy Resolution: Conducted regular audits and cross -checked data entries  to  identify  and  resolve discrepancies,  ensuring  data  accuracy  and  compliance 
-          with internal standards demonstrating my basic analytical skills in assessing data trends.
-          - Report Generation: Assisted in generating detailed performance reports based on system data, providing insights into water quality, equipment efficiency, and resource use for decision
-          -making.
-          - Inventory & Supply Data Management: Managed inventory data for chemical supplies, spare parts, and materials. Ensured the timely and accurate logging of stock levels and procurement
-          details to streamline warehouse operations sharing and communication, fostering a collaborative work environment.
-          - Process Optimization: Played a key role in improving data entry processes by identifying inefficiencies and implementing more effective data validation techniques, which reduced errors
-          and processing times.
-          -  Confidentiality  &  Security:  Adhered  to  company  policies  and  industry standards  for  data security, maintaining confidentiality of sensitive operational data and performing
-          regular data backups.
-          - Typing Speed & Accuracy: Demonstrated high accuracy in entering large volumes of data under tight deadlines, maintaining an error-free record.</p>
-
-        <li><strong>Entry level Data Entry | Production supervisor assistant</strong> at ALRETECH (Internship) (October 2018 – january 2019)</li>
-        <p>During my internship, I significantly contributed to aluminum smelting operations by managing data and processes that directly impacted production efficiency, waste reduction, and quality control. In addition to optimizing raw material control and supply, I led the implementation of an improvement project aimed at reducing pollutants. This experience allowed me to develop a strong foundation in data organization, analysis, and process optimization, key skills essential for a Data Entry Analyst position.
-          Key Responsibilities & Achievements:
-          - Data  Organization & Accuracy: Ensured the accurate tracking and documentation of raw materials and by-product data,  improving overall process efficiency and providing valuable
-          insights for production planning.
-          -  Production  Monitoring  &  Reporting:  Collected,  verified,  and  maintained  data  related  to aluminum smelting processes, including production output, raw material usage,
-          and waste levels, ensuring compliance with quality and industry standards.
-          - Process Optimization through Data Analysis: Led a project to reduce pollutants by 20%, applying data-driven insights to optimize workflows and improve production efficiency by 15%,
-          while maintaining high accuracy in data entry and reporting.
-          - Data Verification & Validation: Developed and implemented robust data validation protocols to ensure the accuracy of production records, reducing discrepancies by 35% and increasing
-          the reliability of reports.
-          - By-Product Management: Implemented a data-tracking system for by-products, enabling better quality  control  and  reducing  non-conformities  by  35%,  while  contributing  to  the 
-          overall sustainability of operations.
-          - Collaboration & Problem-Solving: Worked closely with cross-functional teams, including quality control  and  production,  to  troubleshoot  issues,  optimize  data  workflows,  and 
-          enhance operational efficiency.</p>
-    </ul>
-
-    <h2>Education</h2>
-    <ul>
-        <li><strong>Career certificate</strong> in Cybersecurity, Google (2024)</li>
-        <li><strong>Certification</strong> in Teaching Knowledge Test (Modules 1, 2, 3), Harmon Hall (2021)</li>
-        <li><strong>Bachelor's Degree</strong> in Industrial Chemical Engineering, TecNM (2018)</li>
-        <li><strong>Specialization</strong> in Sustainable Chemical Processes, TecNM (2018)</li>
-    </ul>
-    <h2>Skills</h2>
-    <ul>
-        <li>Strong programming knowledge of Python and R</li>
-        <li>SQL and Database Management</li>
-        <li>Effective Communication</li>
-        <li>Experience with SQL for data manipulation</li>
-        <li>Data Analysis</li>
-        <li>Proficiency in machine learning algorithms</li>
-        <li>Data visualization (Tableau, Matplotlib)</li>
-        <li>Big Data Technologies</li>
-        <li>Knowledge of statistics and probability</li>
-        <li>Machine Learning</li>
-        <li>Experience with big data tools (Hadoop, Spark)</li>
-        <li>Ability to communicate complex findings</li>
-        <li>Statistical Analysis</li>
-        <li>Familiarity with cloud platforms (AWS, Azure)</li>
-        <li>Data wrangling and preprocessing techniques</li>
-        <li>Strong problem-solving, critical and analytical thinking</li>
-    </ul>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
