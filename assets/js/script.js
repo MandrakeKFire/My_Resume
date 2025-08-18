@@ -39,3 +39,9 @@ document.addEventListener('DOMContentLoaded', () => {
     elementsToAnimate.forEach(el => observer.observe(el));
 
 });
+
+fetch('base.md')
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('experience-content').innerHTML = data;
+  });
