@@ -6,7 +6,7 @@
 
 ---
 
-### ## Tecnologías Utilizadas
+### Tecnologías Utilizadas
 
 El proyecto se desarrolló desde cero con las siguientes tecnologías:
 
@@ -16,7 +16,7 @@ El proyecto se desarrolló desde cero con las siguientes tecnologías:
 
 ---
 
-### ## Características principales
+### Características principales
 
 * **Diseño adaptable:** Totalmente funcional en ordenadores, tabletas y dispositivos móviles.
 * **Contenido dinámico:** Sutiles animaciones de desplazamiento para una mejor experiencia de usuario.
@@ -25,7 +25,7 @@ El proyecto se desarrolló desde cero con las siguientes tecnologías:
 
 ---
 
-### ## Contacto
+### Contacto
 
 Puedes contactarme a través de las siguientes plataformas:
 
