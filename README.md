@@ -1,4 +1,4 @@
-# Mi Portafolio y CV Interactivo  5625606502560
+# Mi Portafolio y CV Interactivo
 
 ¡Hola! Este es mi repositorio de CV interactivo, diseñado para reflejar mi experiencia profesional y cualificaciones técnicas en un formato moderno y accesible.
 
