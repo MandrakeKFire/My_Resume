@@ -1,4 +1,4 @@
-## Experiencia Profesional 343543etre4gtergte
+## Experiencia Profesional
 
 ### Project Manager & Data Analyst
 **Truper** | mar. 2022 – Actualmente
