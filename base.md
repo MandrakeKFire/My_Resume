@@ -1,4 +1,4 @@
-## Experiencia Profesional 8282525
+## Experiencia Profesional
 
 ### Project Manager & Data Analyst
 **Truper** | mar. 2022 – Actualmente
