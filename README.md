@@ -1,4 +1,4 @@
-# My Portfolio and Interactive CV 4t34t434t3t3
+# My Portfolio and Interactive CV
 
 Hello! This is my interactive CV repository, designed to reflect my professional experience and technical qualifications in a modern and accessible format.
 
