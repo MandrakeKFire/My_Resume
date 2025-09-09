@@ -1,4 +1,4 @@
-## Experiencia Profesional 3rewafwarfe3
+## Experiencia Profesional
 
 ### Project Manager & Data Analyst
 **Truper** | mar. 2022 – Actualmente
