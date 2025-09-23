@@ -29,5 +29,5 @@ The project was developed from scratch with the following tools: technologies:
 
 You can contact me through the following platforms:
 
-* **LinkedIn:** [https://www.linkedin.com/in/alfredogarciakr](https://bit.ly/41Fsu7L)
+* **LinkedIn:** [@alfredogarciakr](https://bit.ly/41Fsu7L)
 * **Credly:** [https://www.credly.com/users/fredgarciakr](https://www.credly.com/users/fredgarciakr)
