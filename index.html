@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alfredo Garcia | Ingeniero Químico Industrial</title>
-    <meta name="description" content="Mi portafolio profesional, Ingeniero químico con experiencia en optimización de procesos industriales.">
+    <title>Alfredo Garcia | Ingeniero Químico y Analista de Datos</title>
+    <meta name="description" content="Portafolio profesional de Alfredo Garcia, Ingeniero Químico con experiencia en optimización de procesos industriales y análisis de datos.">
 
-    <meta property="og:title" content="Mi CV">
-    <meta property="og:description" content="Explora mi trayectoria profesional">
+    <meta property="og:title" content="CV Interactivo de Alfredo Garcia">
+    <meta property="og:description" content="Explora mi trayectoria profesional en ingeniería, análisis de datos y mejora continua.">
     <meta property="og:image" content="images/Fred.png">
     <meta property="og:url" content="https://mandrakekfire.github.io/MndrFrdRSMTst1/">
     <meta name="robots" content="index, follow">
@@ -31,143 +31,170 @@
         <nav class="container">
             <a href="#" class="logo">AG</a>
             <ul class="nav-menu">
+                <li><a href="#profile">Perfil</a></li>
                 <li><a href="#experience">Experiencia</a></li>
                 <li><a href="#skills">Habilidades</a></li>
-                <li><a href="#education">Educación</a></li>
                 <li><a href="#contact">Contacto</a></li>
             </ul>
             <button class="hamburger">
                 <i class="fas fa-bars"></i>
             </button>
         </nav>
-
-        <section class="hero container">
-            <div class="hero-text">
-                <h1>Alfredo Garcia</h1>
-                <p class="subtitle">Data Analyst & Industrial Chemical Engineer</p>
-                <p class="description">Analista de datos con más de 8 años de experiencia transformando datos complejos en decisiones estratégicas para optimizar procesos industriales.</p>
-                <div class="hero-buttons">
-                    <a href="documents/Resume/Resume JAGS.pdf" class="btn btn-primary" download="Resume_Alfredo_Garcia.pdf">Descargar CV</a>
-                    <a href="#contact" class="btn btn-secondary">Contacto</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="images/Fred.png" alt="Fotografía de Alfredo Garcia">
-            </div>
-        </section>
     </header>
 
     <main>
+        <section id="profile" class="section container">
+            <div class="profile-layout">
+                <div class="profile-image">
+                    <img src="images/Fred.png" alt="Fotografía de Alfredo Garcia">
+                </div>
+                <div class="profile-text">
+                    <h1>Alfredo Garcia</h1>
+                    <p class="subtitle">Ingeniero Químico | Analista de Datos | Optimización de Procesos</p>
+                    <p>Ingeniero Químico orientado a resultados con amplia experiencia en la operación, gestión y optimización de sistemas industriales para tratamiento de aguas, mantenimiento, seguridad y cumplimiento ambiental. Especialista en análisis fisicoquímico, control de procesos y digitalización de reportes.</p>
+                    <p>Soy un líder proactivo, experto en identificar la causa raíz de las ineficiencias para diseñar e implementar soluciones medibles. Busco aportar mi doble perfil técnico y analítico a una empresa innovadora que valore la toma de decisiones basada en datos para resolver desafíos complejos.</p>
+                     <div class="hero-buttons">
+                        <a href="documents/Resume/Resume JAGS.pdf" class="btn btn-primary" download="Resume_Alfredo_Garcia.pdf">Descargar CV</a>
+                        <a href="#contact" class="btn btn-secondary">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="achievements" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Logros Clave</h2>
+                <div class="achievements-grid">
+                    <div class="achievement-card animate-on-scroll">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Reducción de Tiempos Operativos</h3>
+                        <p>Disminución del 80% en tiempos de recolección de muestras (de 3 horas a 40 min) y 50% en dosificación de químicos (de 4 a 2 horas).</p>
+                    </div>
+                    <div class="achievement-card animate-on-scroll">
+                        <i class="fas fa-robot"></i>
+                        <h3>Automatización de BI</h3>
+                        <p>Reducción del 78% en la generación de reportes diarios (de 3 horas a 40 min) mediante dashboards en Excel y Power BI.</p>
+                    </div>
+                    <div class="achievement-card animate-on-scroll">
+                        <i class="fas fa-dollar-sign"></i>
+                        <h3>Reducción de Costos</h3>
+                        <p>Disminución del 15% en mermas de materia prima y 20% en inactividad de equipos con mantenimiento predictivo.</p>
+                    </div>
+                    <div class="achievement-card animate-on-scroll">
+                        <i class="fas fa-handshake"></i>
+                        <h3>Gestión de Proyectos</h3>
+                        <p>Liderazgo en la renovación de contratos, gestión de presupuestos y coordinación de equipos multidisciplinarios para alcanzar los objetivos del negocio.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="experience" class="section container">
-            <h2>Experiencia Profesional</h2>
+            <h2 class="section-title">Experiencia Profesional</h2>
+            <p class="section-subtitle">Haz clic en cada puesto para ver los detalles y proyectos.</p>
             <div class="experience-grid">
-            
-                <div class="card animate-on-scroll">
+                
+                <div class="card experience-card animate-on-scroll" data-modal-id="exp1">
                     <div class="card-header">
                         <h3>Project Manager | Supervisor Comercial | Técnico de Servicio</h3>
                         <p>Grupo Truper | may. 2023 – Actualmente</p>
                     </div>
-                    <div class="card-body">
-                        <ul>
-                            <li><strong>Optimización de procesos:</strong> Diseñé rutas de recolección de muestras, reduciendo el tiempo de 3 horas a solo 40 minutos. También optimicé la dosificación de químicos, disminuyendo el tiempo del procedimiento de 4 a 2 horas.</li>
-                            <li><strong>Análisis y Reporte de Datos:</strong> Desarrollé y automaticé bases de datos y reportes en Excel con tablas dinámicas y fórmulas, reduciendo el tiempo de elaboración de reportes diarios de 3 horas a 40 minutos, y los semanales de 2 horas a 30 minutos.</li>
-                            <li><strong>Business Intelligence:</strong> Creación y uso de dashboards en Power BI para compartir hallazgos con líderes de proyecto.</li>
-                            <li><strong>Liderazgo y Gestión de Proyectos:</strong> Lideré la renovación de contratos, gestioné recursos y personal, y mantuve comunicación constante con clientes y proveedores para la toma de decisiones operativas.</li>
-                            <li><strong>Mantenimiento Predictivo:</strong> Identifiqué tendencias en parámetros fisicoquímicos para anticipar y corregir problemas en equipos como calderas y torres de enfriamiento antes de que afectaran la operación.</li>
-                        </ul>
-                    </div>
                 </div>
 
-                <div class="card animate-on-scroll">
+                <div class="card experience-card animate-on-scroll" data-modal-id="exp2">
                     <div class="card-header">
                         <h3>Supervisor de Seguridad e Higiene</h3>
-                        <p>Grupo Truper | feb. 2022 – abr. 2023</p>
-                    </div>
-                    <div class="card-body">
-                        <ul>
-                            <li>Supervisé actividades de alto riesgo, como trabajos en altura, garantizando el cumplimiento de los protocolos de seguridad. Realicé verificaciones de equipos y charlas de seguridad de 5 minutos.</li>
-                        </ul>
+                        <p>Empresa 2 | feb. 2022 – abr. 2023</p>
                     </div>
                 </div>
 
-                <div class="card animate-on-scroll">
+                <div class="card experience-card animate-on-scroll" data-modal-id="exp3">
                     <div class="card-header">
-                        <h3>Supervisor de Mantenimiento de PTAR | Técnico de Mtto. de PTAR | Aux. de Mtto. de PTAR</h3>
-                        <p>MODASTAGE | jul. 2018 – feb. 2022</p>
-                    </div>
-                    <div class="card-body">
-                        <ul>
-                            <li><strong>Reducción de Inactividad:</strong> Implementé un programa de mantenimiento preventivo que redujo el tiempo de inactividad de los equipos en un 20%.</li>
-                            <li><strong>Cumplimiento Normativo:</strong> Supervisé el tratamiento de aguas residuales, asegurando el cumplimiento con las normas NOM-127-SSA1-1994 y NOM-002-SEMARNAT-1996.</li>
-                            <li><strong>Gestión de Recursos:</strong> Controlé el inventario de almacén y gestioné presupuestos para la compra de suministros, refacciones y productos químicos.</li>
-                        </ul>
+                        <h3>Supervisor de Mantenimiento PTAR</h3>
+                        <p>Modastage | jul. 2018 – feb. 2022</p>
                     </div>
                 </div>
 
-                <div class="card animate-on-scroll">
+                <div class="card experience-card animate-on-scroll" data-modal-id="exp4">
                     <div class="card-header">
-                        <h3>Becario de producción</h3>
+                        <h3>Becario de Producción</h3>
                         <p>AlReTech | oct. 2017 – feb. 2018</p>
                     </div>
-                    <div class="card-body">
-                        <ul>
-                            <li><strong>Optimización de Inventarios:</strong> Lideré un proyecto que logró una <strong>reducción de la merma en un 15% semanal</strong> mediante la implementación de un sistema de asignación óptima de materia prima.</li>
-                            <li><strong>Toma de Decisiones Basada en Datos:</strong> Diseñé e implementé KPIs de producción y residuos para fortalecer el monitoreo y la toma de decisiones.</li>
-                        </ul>
+                </div>
+
+                <div class="card experience-card animate-on-scroll" data-modal-id="exp5">
+                    <div class="card-header">
+                        <h3>Asistente de Desarrollo de Producto</h3>
+                        <p>Empresa 5 | feb. 2017 – jul. 2017</p>
+                    </div>
+                </div>
+
+                <div class="card experience-card animate-on-scroll" data-modal-id="exp6">
+                    <div class="card-header">
+                        <h3>Pasante de Calidad</h3>
+                        <p>Empresa 6 | oct. 2016 – feb. 2017</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="skills" class="section container">
-            <h2>Habilidades y Certificaciones</h2>
-            <div class="skills-grid">
-                <div class="skill-category animate-on-scroll">
-                    <i class="fas fa-tools"></i>
-                    <h3>Habilidades Técnicas</h3>
+        <section id="skills" class="section bg-light">
+            <div class="container dual-section">
+                <div id="education">
+                    <h2 class="section-title">Educación</h2>
                     <ul>
-                        <li>Análisis de Datos</li>
-                        <li>Python</li>
-                        <li>SQL</li>
-                        <li>Microsoft Excel (Avanzado)</li>
-                        <li>Power BI</li>
-                        <li>Análisis Físicoquímico de Agua</li>
-                        <li>Optimización de Procesos</li>
+                        <li><strong>Ingeniería Química</strong> - TecNM (2013-2018)</li>
+                        <li><strong>Especialidad en Procesos Químicos Sustentables</strong> - TecNM (2016-2018)</li>
+                        <li><strong>Certificación Inglés Nivel B2</strong> - Harmon Hall (2018-2020)</li>
+                        <li><strong>Certificación TKT</strong> - Harmon Hall (2020)</li>
                     </ul>
                 </div>
-                <div class="skill-category animate-on-scroll">
-                    <i class="fas fa-certificate"></i>
-                    <h3>Certificaciones Destacadas</h3>
+                <div>
+                    <h2 class="section-title">Habilidades</h2>
                     <ul>
-                        <li><strong>Google Data Analytics Specialization</strong></li>
-                        <li><strong>Cybersecurity Specialization</strong></li>
-                        <li>Data Analysis with R Programming</li>
-                        <li>Google Cloud Computing Foundations</li>
-                        <li>Automatiza las tareas de ciberseguridad con Python</li>
-                        <li>Herramientas del oficio: Linux y SQL</li>
+                        <li>Análisis de Datos (Python, R, SQL)</li>
+                        <li>Business Intelligence (Power BI, Excel Avanzado)</li>
+                        <li>Optimización de Procesos (Lean, 5S)</li>
+                        <li>Análisis Físicoquímico de Agua</li>
+                        <li>Gestión de Proyectos y Stakeholders</li>
+                        <li>Seguridad Industrial (NOM, OSHA)</li>
                     </ul>
                 </div>
             </div>
         </section>
+        
+        <section id="other-data" class="section container">
+            <h2 class="section-title">Otros Datos de Interés</h2>
+             <div class="achievements-grid">
+                <div class="achievement-card animate-on-scroll">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Certificaciones Clave</h3>
+                    <p>Google Data Analytics, Cybersecurity, Data Analysis with R, Google Cloud Foundations, Automatización con Python, Linux y SQL.</p>
+                </div>
+                <div class="achievement-card animate-on-scroll">
+                    <i class="fas fa-globe"></i>
+                    <h3>Idiomas</h3>
+                    <p>Español (Nativo) e Inglés (Nivel B2, Profesional).</p>
+                </div>
+            </div>
+        </section>
 
-        <section id="education" class="section container">
-            <h2>Educación</h2>
-            <div class="education-grid">
-                <div class="card animate-on-scroll">
-                    <p><strong>Ingeniería Química</strong> - Tecnológico Nacional de México</p>
-                    <small>2013 – 2018</small>
-                </div>
-                <div class="card animate-on-scroll">
-                    <p><strong>Especialidad en Procesos Químicos Sustentables</strong> - TecNM</p>
-                    <small>2016 – 2018</small>
-                </div>
-                <div class="card animate-on-scroll">
-                    <p><strong>Certificación en Idioma Inglés Nivel B2</strong> - Harmon Hall</p>
-                    <small>2018 – 2020</small>
-                </div>
-                <div class="card animate-on-scroll">
-                    <p><strong>Teaching Knowledge Test (TKT)</strong> - Harmon Hall</p>
-                    <small>2020</small>
+
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <h2 class="section-title">Contacto</h2>
+                <p>¡Conectemos! Estoy abierto a nuevas oportunidades y colaboraciones.</p>
+                <a href="mailto:Alfred.paralegal967@pasinbox.com" class="email-link">Alfred.paralegal967@pasinbox.com</a>
+                <p class="social-title">✨ Sígueme en mis redes sociales ✨</p>
+                <div class="social-links">
+                    <a href="https://bit.ly/41Fsu7L" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://bit.ly/kr_fred" target="_blank" aria-label="Twitch"><i class="fab fa-twitch"></i></a>
+                    <a href="https://bit.ly/YOUTUBE__FredGamesGaming" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://bit.ly/FACEBOOK__Fred_GS" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://bit.ly/INSTAGRAM__FredGS" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://bit.ly/TIKTOK__kr_fred" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="https.../bit.ly/THREADS__k_fred_r" target="_blank" aria-label="Threads"><i class="fab fa-threads"></i></a>
+                    <a href="https://bit.ly/KICK__kr_fred" target="_blank" aria-label="Kick"><i class="fab fa-kickstarter-k"></i></a>
                 </div>
             </div>
         </section>
@@ -178,6 +205,99 @@
             <p>&copy; <span id="year"></span> Alfredo Garcia. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <div id="experience-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3 id="modal-title"></h3>
+            <p id="modal-company"></p>
+            <div id="modal-body"></div>
+            <h4>Galería de Proyectos</h4>
+            <div id="modal-gallery" class="gallery">
+                </div>
+        </div>
+    </div>
+    
+    <div id="modal-data" style="display: none;">
+        
+        <div id="exp1-content">
+            <p>Como Project Manager y Supervisor, lideré la optimización de operaciones de tratamiento de agua para clientes industriales clave. Mis responsabilidades abarcaron desde el análisis fisicoquímico en campo hasta la gestión estratégica de proyectos, personal y recursos.</p>
+            <ul>
+                <li>Análisis y diagnóstico de sistemas de calderas, torres de enfriamiento y chillers.</li>
+                <li>Desarrollo de planes de trabajo personalizados basados en análisis de datos para mejorar la eficiencia.</li>
+                <li>Implementación de programas de mantenimiento predictivo y preventivo, reduciendo fallas y costos.</li>
+                <li>Automatización de reportes técnicos y de gestión utilizando Excel y Power BI.</li>
+                <li>Capacitación y liderazgo de equipos técnicos en protocolos de seguridad y operación.</li>
+                <li>Gestión de la relación con clientes y proveedores, asegurando la renovación de contratos.</li>
+            </ul>
+            <div class="images">
+                <img src="images/job_record/job7_1.jpg" alt="Evidencia de Proyecto 1">
+                <img src="images/job_record/job7_2.jpg" alt="Evidencia de Proyecto 2">
+                <img src="images/job_record/job7_3.jpg" alt="Evidencia de Proyecto 3">
+            </div>
+        </div>
+        
+        <div id="exp2-content">
+            <p>Responsable de la supervisión y cumplimiento de los protocolos de seguridad e higiene en operaciones de alto riesgo. Mi enfoque se centró en la prevención de incidentes y la creación de una cultura de seguridad proactiva.</p>
+            <ul>
+                <li>Supervisión de trabajos en alturas utilizando plataformas elevadoras.</li>
+                <li>Realización de charlas de seguridad de 5 minutos y auditorías de equipo pre-operacionales.</li>
+                <li>Elaboración de reportes de análisis de riesgo y verificación del cumplimiento normativo.</li>
+            </ul>
+            <div class="images">
+                <img src="images/placeholder.png" alt="Seguridad en alturas">
+            </div>
+        </div>
+        
+        <div id="exp3-content">
+            <p>Como Supervisor y Técnico en la Planta de Tratamiento de Aguas Residuales (PTAR), gestioné el mantenimiento y la operación para garantizar la calidad del agua y el cumplimiento de normativas ambientales.</p>
+            <ul>
+                <li>Implementé un programa de mantenimiento preventivo que redujo el tiempo de inactividad en un 20%.</li>
+                <li>Supervisé el tratamiento de aguas residuales para cumplir con las NOM-127-SSA1-1994 y NOM-002-SEMARNAT-1996.</li>
+                <li>Gestioné el inventario de químicos y refacciones, y coordiné con proveedores.</li>
+                <li>Operé y mantuve equipos como sistemas DAF, ósmosis inversa, filtros y reactores biológicos.</li>
+            </ul>
+            <div class="images">
+                <img src="images/placeholder.png" alt="Planta de tratamiento de agua">
+                <img src="images/placeholder.png" alt="Equipo de osmosis inversa">
+            </div>
+        </div>
+        
+        <div id="exp4-content">
+            <p>Durante mi beca en esta fundidora de aluminio, lideré un proyecto de mejora continua enfocado en la gestión de recursos y la reducción de desperdicios en el proceso productivo.</p>
+            <ul>
+                <li>Lideré un proyecto que redujo la merma de materia prima en un 15% semanal.</li>
+                <li>Diseñé e implementé KPIs de producción y residuos para la toma de decisiones basada en datos.</li>
+                <li>Apliqué metodologías Lean Manufacturing y 5S para optimizar el flujo de suministros.</li>
+            </ul>
+            <div class="images">
+                <img src="images/placeholder.png" alt="Proceso de fundición">
+            </div>
+        </div>
+        
+        <div id="exp5-content">
+            <p>Contribuí al área de I+D en el desarrollo de recubrimientos innovadores para guantes de seguridad, enfocándome en prototipos con propiedades dieléctricas.</p>
+            <ul>
+                <li>Desarrollé y validé 3 formulaciones de poliuretano (PU) que cumplieron con la normativa ASTM D120-14a.</li>
+                <li>Elaboré reportes técnicos y presentaciones de avance para agilizar la toma de decisiones de inversión en I+D.</li>
+            </ul>
+            <div class="images">
+                <img src="images/placeholder.png" alt="Prototipo de guante dieléctrico">
+            </div>
+        </div>
+        
+        <div id="exp6-content">
+            <p>Colaboré en el departamento de calidad, garantizando la excelencia de guantes manufacturados a través de pruebas avanzadas y análisis estadístico.</p>
+            <ul>
+                <li>Identifiqué fallas críticas en diseños mediante análisis estadístico, reduciendo reprocesos en un 18%.</li>
+                <li>Implementé un sistema de trazabilidad para producto importado que disminuyó los rechazos en un 15%.</li>
+                <li>Instruí a más de 10 operarios en Buenas Practicas de Laboratorio (BPL) y estándares ISO 9001.</li>
+            </ul>
+            <div class="images">
+                <img src="images/placeholder.png" alt="Pruebas de calidad en laboratorio">
+            </div>
+        </div>
+    </div>
 
     <script src="assets/js/script.js"></script>
 </body>
