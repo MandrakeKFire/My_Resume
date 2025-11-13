@@ -1,29 +1,31 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // Lógica para el menú hamburguesa en móviles
+    // --- 1. LÓGICA MENÚ HAMBURGUESA (MÓVILES) ---
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
 
-    hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('active');
-        navMenu.classList.toggle('active');
-    });
-
-    // Cierra el menú móvil al hacer clic en un enlace
-    document.querySelectorAll('.nav-menu a').forEach(link => {
-        link.addEventListener('click', () => {
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
+    if (hamburger && navMenu) {
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
         });
-    });
+
+        // Cierra el menú móvil al hacer clic en un enlace
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    }
     
-    // Actualizar el año en el footer
+    // --- 2. ACTUALIZAR AÑO EN FOOTER ---
     const yearSpan = document.getElementById('year');
     if (yearSpan) {
         yearSpan.textContent = new Date().getFullYear();
     }
 
-    // Animación de elementos al hacer scroll
+    // --- 3. ANIMACIÓN AL HACER SCROLL ---
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -34,11 +36,66 @@ document.addEventListener('DOMContentLoaded', () => {
         threshold: 0.1 // El elemento se animará cuando un 10% sea visible
     });
 
-    // Observar todos los elementos con la clase .animate-on-scroll
     const elementsToAnimate = document.querySelectorAll('.animate-on-scroll');
     elementsToAnimate.forEach(el => observer.observe(el));
 
-    // --- LÓGICA DEL CARRUSEL EXPANDIBLE (LIGHTBOX) ---
+    // --- 4. LÓGICA DE MODALES DE EXPERIENCIA (CLIC EN TARJETAS) ---
+    const modal = document.getElementById('experience-modal');
+    const experienceCards = document.querySelectorAll('.experience-card');
+    const closeModalButton = document.querySelector('.close-button');
+
+    // Al hacer clic en una tarjeta de experiencia
+    experienceCards.forEach(card => {
+        card.addEventListener('click', () => {
+            const modalId = card.getAttribute('data-modal-id');
+            const contentSource = document.getElementById(`${modalId}-content`);
+            
+            if (contentSource && modal) {
+                // Obtener datos
+                const title = card.querySelector('h3').textContent;
+                const company = card.querySelector('p').textContent;
+                const detailsHTML = contentSource.querySelector('ul, p').cloneNode(true); // Copia texto
+                const images = contentSource.querySelectorAll('.images img'); // Busca imágenes si las hay en el bloque oculto
+
+                // Poblar el modal
+                document.getElementById('modal-title').textContent = title;
+                document.getElementById('modal-company').textContent = company;
+                
+                const modalBody = document.getElementById('modal-body');
+                modalBody.innerHTML = ''; 
+                modalBody.appendChild(detailsHTML);
+
+                // Poblar galería del modal (si hay imágenes extras en la descripción oculta)
+                const modalGallery = document.getElementById('modal-gallery');
+                modalGallery.innerHTML = ''; 
+                if(images.length > 0){
+                     images.forEach(img => {
+                        const galleryImage = img.cloneNode(true);
+                        modalGallery.appendChild(galleryImage);
+                    });
+                }
+
+                // Mostrar modal
+                modal.style.display = 'block';
+            }
+        });
+    });
+
+    // Cerrar modal de experiencia
+    if (closeModalButton && modal) {
+        closeModalButton.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+    }
+    
+    // Cerrar modal al hacer clic fuera
+    window.addEventListener('click', (event) => {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    });
+
+    // --- 5. LÓGICA DEL CARRUSEL EXPANDIBLE (LIGHTBOX) ---
     const imageViewer = document.getElementById('image-viewer');
     const fullImage = document.getElementById('full-image');
     const closeViewer = document.querySelector('.close-viewer');
@@ -48,23 +105,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
     carouselImages.forEach(img => {
         img.addEventListener('click', function(e) {
-            // Evitamos que el clic se propague (por si acaso está dentro de otro elemento clickable)
+            // Evitamos que el clic se propague a la tarjeta (para que no se abra el modal de experiencia al ver la foto)
             e.stopPropagation();
             
-            imageViewer.style.display = "flex"; // Usamos flex para centrar
-            fullImage.src = this.src; // La imagen grande será igual a la que diste clic
-            fullImage.alt = this.alt;
+            if (imageViewer && fullImage) {
+                imageViewer.style.display = "flex"; // Usamos flex para centrar
+                fullImage.src = this.src; 
+                fullImage.alt = this.alt;
+            }
         });
     });
 
     // Cerrar el visor al hacer clic en la X
-    if (closeViewer) {
+    if (closeViewer && imageViewer) {
         closeViewer.addEventListener('click', () => {
             imageViewer.style.display = "none";
         });
     }
 
-    // Cerrar el visor al hacer clic fuera de la imagen (en el fondo negro)
+    // Cerrar el visor al hacer clic fuera de la imagen
     if (imageViewer) {
         imageViewer.addEventListener('click', (e) => {
             if (e.target === imageViewer) {
@@ -73,9 +132,3 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
-
-fetch('base.md')
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById('experience-content').innerHTML = data;
-  });
