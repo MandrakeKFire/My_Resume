@@ -469,3 +469,66 @@ nav {
         }
     }
 }
+
+/* --- ESTILOS DEL VISOR DE IMÁGENES (LIGHTBOX) --- */
+.image-modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 2000; /* Mayor que el menú y otros modales */
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo negro semi-transparente */
+    backdrop-filter: blur(5px); /* Efecto borroso en el fondo */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Imagen expandida */
+.viewer-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 1000px;
+    max-height: 90vh; /* Que no sea más alta que la pantalla */
+    object-fit: contain;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    animation: zoom 0.3s; /* Animación de entrada */
+}
+
+/* Botón de cerrar (X) */
+.close-viewer {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+    z-index: 2001;
+}
+
+.close-viewer:hover,
+.close-viewer:focus {
+    color: var(--secondary-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Animación de zoom */
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* Ajuste para móviles */
+@media only screen and (max-width: 700px) {
+    .viewer-content {
+        width: 95%;
+    }
+}
