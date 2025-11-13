@@ -38,6 +38,40 @@ document.addEventListener('DOMContentLoaded', () => {
     const elementsToAnimate = document.querySelectorAll('.animate-on-scroll');
     elementsToAnimate.forEach(el => observer.observe(el));
 
+    // --- LÓGICA DEL CARRUSEL EXPANDIBLE (LIGHTBOX) ---
+    const imageViewer = document.getElementById('image-viewer');
+    const fullImage = document.getElementById('full-image');
+    const closeViewer = document.querySelector('.close-viewer');
+    
+    // Seleccionamos todas las imágenes dentro del track del carrusel
+    const carouselImages = document.querySelectorAll('.carousel-track img');
+
+    carouselImages.forEach(img => {
+        img.addEventListener('click', function(e) {
+            // Evitamos que el clic se propague (por si acaso está dentro de otro elemento clickable)
+            e.stopPropagation();
+            
+            imageViewer.style.display = "flex"; // Usamos flex para centrar
+            fullImage.src = this.src; // La imagen grande será igual a la que diste clic
+            fullImage.alt = this.alt;
+        });
+    });
+
+    // Cerrar el visor al hacer clic en la X
+    if (closeViewer) {
+        closeViewer.addEventListener('click', () => {
+            imageViewer.style.display = "none";
+        });
+    }
+
+    // Cerrar el visor al hacer clic fuera de la imagen (en el fondo negro)
+    if (imageViewer) {
+        imageViewer.addEventListener('click', (e) => {
+            if (e.target === imageViewer) {
+                imageViewer.style.display = "none";
+            }
+        });
+    }
 });
 
 fetch('base.md')
